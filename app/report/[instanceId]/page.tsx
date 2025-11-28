@@ -7,7 +7,7 @@ import ReportContent from '@/components/ReportContent';
 
 export default function ReportPage() {
   const params = useParams();
-  const instanceId = params.instanceId as string;
+  const instanceId = params?.instanceId as string;
   const router = useRouter();
   const { getInstanceById, definitions } = useAssessment();
 

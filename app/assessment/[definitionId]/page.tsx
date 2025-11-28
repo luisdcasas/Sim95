@@ -8,10 +8,10 @@ import { ChevronLeft, ChevronRight, Check, Save } from 'lucide-react';
 import { Question } from '@/types/assessment';
 
 export default function AssessmentTakingPage() {
-  const params = useParams();
+  const params = useParams() as { definitionId: string };
   const definitionId = params.definitionId as string;
   const searchParams = useSearchParams();
-  const instanceId = searchParams.get('instance');
+  const instanceId = searchParams ? searchParams.get("instance") : null;
   const router = useRouter();
   const { user } = useAuth();
   const { definitions, getInstanceById, saveAnswers, completeAssessment } = useAssessment();
@@ -35,7 +35,7 @@ export default function AssessmentTakingPage() {
         }
         return acc;
       }, [] as { section: string; questions: Question[] }[]);
-      
+
       setSections(grouped);
     }
   }, [definition]);
@@ -98,7 +98,7 @@ export default function AssessmentTakingPage() {
 
   const isCurrentSectionComplete = () => {
     if (!currentSection) return false;
-    return currentSection.questions.every(q => 
+    return currentSection.questions.every(q =>
       !q.required || (answers[q.id] !== undefined && answers[q.id] !== null && answers[q.id] !== '')
     );
   };
@@ -175,11 +175,10 @@ export default function AssessmentTakingPage() {
                                 <button
                                   key={value}
                                   onClick={() => handleAnswer(question.id, value)}
-                                  className={`w-12 h-12 rounded-lg transition-all ${
-                                    answers[question.id] === value
-                                      ? 'bg-purple-600 text-white scale-110'
-                                      : 'bg-white/10 text-white/70 hover:bg-white/20'
-                                  }`}
+                                  className={`w-12 h-12 rounded-lg transition-all ${answers[question.id] === value
+                                    ? 'bg-purple-600 text-white scale-110'
+                                    : 'bg-white/10 text-white/70 hover:bg-white/20'
+                                    }`}
                                 >
                                   {value}
                                 </button>
@@ -201,11 +200,10 @@ export default function AssessmentTakingPage() {
                             <button
                               key={option.value}
                               onClick={() => handleAnswer(question.id, option.value)}
-                              className={`w-full text-left px-4 py-3 rounded-lg transition-all ${
-                                answers[question.id] === option.value
-                                  ? 'bg-purple-600 text-white'
-                                  : 'bg-white/10 text-white/70 hover:bg-white/20'
-                              }`}
+                              className={`w-full text-left px-4 py-3 rounded-lg transition-all ${answers[question.id] === option.value
+                                ? 'bg-purple-600 text-white'
+                                : 'bg-white/10 text-white/70 hover:bg-white/20'
+                                }`}
                             >
                               {option.label}
                             </button>

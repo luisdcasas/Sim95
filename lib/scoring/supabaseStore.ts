@@ -1,4 +1,4 @@
-import { supabase } from "../supabase";
+import { getSupabaseServiceClient } from "@/lib/supabase/service";
 import {
   ScoringBundle,
   EngineError,
@@ -7,7 +7,7 @@ import {
 
 export async function saveVersionToDB(stored: StoredVersion) {
   const { bundle, versionHash, graph } = stored;
-
+  const supabase = getSupabaseServiceClient();
   const { error } = await supabase
     .from("scoring_versions")
     .insert({
@@ -22,6 +22,7 @@ export async function saveVersionToDB(stored: StoredVersion) {
 }
 
 export async function lockVersionInDB(versionId: string) {
+  const supabase = getSupabaseServiceClient();
   const { error } = await supabase
     .from("scoring_versions")
     .update({ locked: true })
@@ -31,6 +32,7 @@ export async function lockVersionInDB(versionId: string) {
 }
 
 export async function fetchVersionFromDB(versionId: string): Promise<StoredVersion | null> {
+  const supabase = getSupabaseServiceClient();
   const { data, error } = await supabase
     .from("scoring_versions")
     .select("*")

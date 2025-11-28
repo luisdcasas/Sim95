@@ -9,7 +9,7 @@ import ScoringRulesEditor from '../../../_components/ScoringRulesEditor';
 
 export default function DefinitionEditor() {
     const router = useRouter();
-    const params = useParams();
+    const params = useParams() as { definitionId: string };
     const definitionId = params.definitionId as string;
 
     const [activeTab, setActiveTab] = useState<'basic' | 'questions' | 'scoring'>('basic');

@@ -13,10 +13,10 @@ import type { AssessmentDefinition, Question } from '@/types/assessment';
 
 export default function DefinitionEditorPage() {
     const router = useRouter();
-    const params = useParams();
     const supabase = getSupabaseBrowserClient();
 
-    const definitionId = params.definitionId as string;
+    const params = useParams() as { definitionId: string };
+    const definitionId = params.definitionId;
 
     const [loading, setLoading] = useState(true);
     const [saving, setSaving] = useState(false);

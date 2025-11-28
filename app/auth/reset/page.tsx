@@ -16,12 +16,12 @@ function ResetPasswordContent() {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const searchParams = useSearchParams();
   const router = useRouter();
-  const token = searchParams.get("access_token");
-  const type = searchParams.get("type");
-  
+  const token = searchParams?.get("access_token") ?? null;
+  const type = searchParams?.get("type") ?? null;
+
   useEffect(() => {
-    const code = searchParams.get("code");
-    const type = searchParams.get("type");
+    const code = searchParams?.get("code") ?? null;;
+    const type = searchParams?.get("type") ?? null;;
 
     if (!code || type !== "recovery") {
       setError("Invalid reset link. Please request a new one.");
