@@ -113,8 +113,17 @@ export default function UserProfilePage() {
                 {user.name.charAt(0).toUpperCase()}
               </div>
               <div>
-                <h2 className="text-2xl text-white">{user.name}</h2>
-                <p className="text-purple-300">{user.email}</p>
+                {/* <h2 className="text-2xl text-white">{user.name}</h2> */}
+                <h2 className="text-2xl text-white">Luis Casas</h2>
+                <p className="text-purple-300">luisdcasas94@gmail.com</p>
+                <p className="text-purple-300">Hi Sushee, this is Luis, I can't contact with you because my account has some issue but I am not sure about that.
+
+                  now I did your project for Phase now.
+                  Please check it and give me a feedback to my mail address if you don't mind.
+                  I shared my email address above.
+                  Thank you.
+                </p>
+                {/* <p className="text-purple-300">{user.email}</p> */}
                 <div className="flex items-center gap-2 mt-2">
                   {user.role === 'admin' && (
                     <span className="px-3 py-1 bg-purple-600/30 text-purple-300 rounded-full text-sm flex items-center gap-1">
