@@ -1,0 +1,28 @@
+{
+    "version_id": "test-v1",
+    "variables": {
+      "v_sum": {
+        "type": "rule",
+        "expression": {
+          "op": "sum",
+          "inputs": [
+            { "source": "Q1" },
+            { "source": "Q2" }
+          ]
+        }
+      },
+      "v_scaled": {
+        "type": "rule",
+        "expression": {
+          "op": "scale",
+          "inputs": [
+            { "source": "v_sum" }
+          ],
+          "min": 0,
+          "max": 20,
+          "to": 100
+        }
+      }
+    }
+  }
+  

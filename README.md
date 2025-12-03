@@ -23,7 +23,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 ## Supabase Setup
 
 1. Create a Supabase project and copy the anon + service role keys.
-2. Duplicate `env.example` → `.env.local` and fill:
+2. Duplicate `.env.example` → `.env.local` and fill:
    ```
    NEXT_PUBLIC_SUPABASE_URL=...
    NEXT_PUBLIC_SUPABASE_ANON_KEY=...

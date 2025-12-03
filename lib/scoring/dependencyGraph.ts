@@ -1,5 +1,15 @@
 import { DependencyGraph, EngineError, ScoringBundle } from "./types";
 
+export class CycleError extends Error {
+  cyclePath: string[];
+
+  constructor(message: string, cyclePath: string[]) {
+    super(message);
+    this.name = "CycleError";
+    this.cyclePath = cyclePath;
+  }
+}
+
 export function buildDependencyGraph(
   bundle: ScoringBundle
 ): DependencyGraph | EngineError {

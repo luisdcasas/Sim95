@@ -17,8 +17,24 @@ export type MultiplyExpression = BaseExpression & { op: "multiply" };
 export type DivideExpression = BaseExpression & { op: "divide" };
 export type MinExpression = BaseExpression & { op: "min" };
 export type MaxExpression = BaseExpression & { op: "max" };
-export type ScaleExpression = BaseExpression & { op: "scale"; factor: number };
-export type NormalizeExpression = BaseExpression & { op: "normalize" };
+export type ScaleExpression = BaseExpression & {
+  op: "scale";
+
+  /** Simple scaling: v * factor */
+  factor?: number;
+
+  /** Advanced range scaling: map [min,max] → [0,to] */
+  min?: number;
+  max?: number;
+  to?: number;
+};
+export type NormalizeExpression = BaseExpression & {
+  op: "normalize";
+
+  /** Optional range normalization: map [min,max] → [0,1] */
+  min?: number;
+  max?: number;
+};
 
 // Comparisons
 export type EqualsExpression = {

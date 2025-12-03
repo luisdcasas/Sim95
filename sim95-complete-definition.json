@@ -1,0 +1,1188 @@
+{
+    "id": "5a410192-ea9a-4534-bdb8-070c3a9f40aa",
+    "name": "SIM95: Sovereign Identity Matrix",
+    "version": "1.0.0",
+    "description": "Comprehensive psychometric assessment measuring 12 core identity subsystems across 95 questions",
+    "questions": [
+      {
+        "id": "q1",
+        "text": "123454",
+        "type": "scale",
+        "section": "Identity & Archetype",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "archetype",
+          "selfLeadership"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q2",
+        "text": "When faced with challenges, I naturally step into leadership rather than wait for direction.",
+        "type": "scale",
+        "section": "Identity & Archetype",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "archetype",
+          "selfLeadership"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q3",
+        "text": "I have a clear sense of who I am independent of what others think of me.",
+        "type": "scale",
+        "section": "Identity & Archetype",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "archetype",
+          "identityAge"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q4",
+        "text": "My primary motivation comes from:",
+        "type": "multiple_choice",
+        "options": [
+          {
+            "label": "Building and creating systems",
+            "value": "building",
+            "weight": 1
+          },
+          {
+            "label": "Leading and influencing others",
+            "value": "leading",
+            "weight": 2
+          },
+          {
+            "label": "Personal freedom and autonomy",
+            "value": "autonomy",
+            "weight": 3
+          },
+          {
+            "label": "Achieving mastery and excellence",
+            "value": "mastery",
+            "weight": 4
+          },
+          {
+            "label": "Making meaningful impact",
+            "value": "impact",
+            "weight": 5
+          }
+        ],
+        "section": "Identity & Archetype",
+        "required": true,
+        "subsystems": [
+          "archetype"
+        ]
+      },
+      {
+        "id": "q5",
+        "text": "I regularly invest time in understanding my patterns, triggers, and growth edges.",
+        "type": "scale",
+        "section": "Identity & Archetype",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "archetype",
+          "selfLeadership"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q6",
+        "text": "When under significant stress, I tend to abandon my standards and systems.",
+        "type": "scale",
+        "section": "Collapse Patterns",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "collapse",
+          "stability"
+        ],
+        "scaleLabels": {
+          "max": "Always",
+          "min": "Never"
+        }
+      },
+      {
+        "id": "q7",
+        "text": "I notice predictable patterns in how I react when feeling overwhelmed.",
+        "type": "scale",
+        "section": "Collapse Patterns",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "collapse",
+          "emotionalPattern"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q8",
+        "text": "My performance significantly drops when I experience:",
+        "type": "multiple_choice",
+        "options": [
+          {
+            "label": "Rejection or criticism",
+            "value": "rejection",
+            "weight": 1
+          },
+          {
+            "label": "Uncertainty and ambiguity",
+            "value": "uncertainty",
+            "weight": 2
+          },
+          {
+            "label": "High-stakes pressure",
+            "value": "pressure",
+            "weight": 3
+          },
+          {
+            "label": "Social isolation",
+            "value": "isolation",
+            "weight": 4
+          },
+          {
+            "label": "Failure or setbacks",
+            "value": "failure",
+            "weight": 5
+          }
+        ],
+        "section": "Collapse Patterns",
+        "required": true,
+        "subsystems": [
+          "collapse"
+        ]
+      },
+      {
+        "id": "q9",
+        "text": "I can recover quickly from setbacks and return to my optimal state.",
+        "type": "scale",
+        "section": "Collapse Patterns",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "collapse",
+          "stability",
+          "emotionalPattern"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q10",
+        "text": "I have developed specific strategies to prevent or manage my collapse patterns.",
+        "type": "scale",
+        "section": "Collapse Patterns",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "collapse",
+          "selfLeadership"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q11",
+        "text": "I can say \"no\" to requests that don't align with my priorities without guilt.",
+        "type": "scale",
+        "section": "Boundaries & Sovereignty",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "boundary",
+          "selfLeadership"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q12",
+        "text": "People respect my boundaries because I enforce them consistently.",
+        "type": "scale",
+        "section": "Boundaries & Sovereignty",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "boundary"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q13",
+        "text": "I have clear systems for managing my time, energy, and attention.",
+        "type": "scale",
+        "section": "Boundaries & Sovereignty",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "boundary",
+          "capacity"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q14",
+        "text": "My boundary enforcement is:",
+        "type": "multiple_choice",
+        "options": [
+          {
+            "label": "Inconsistent - varies by person/situation",
+            "value": "inconsistent",
+            "weight": 1
+          },
+          {
+            "label": "Rigid - same rules for everyone",
+            "value": "rigid",
+            "weight": 2
+          },
+          {
+            "label": "Adaptive - context-dependent but principled",
+            "value": "adaptive",
+            "weight": 3
+          },
+          {
+            "label": "Weak - often violated by others",
+            "value": "weak",
+            "weight": 4
+          },
+          {
+            "label": "Strong - consistently maintained",
+            "value": "strong",
+            "weight": 5
+          }
+        ],
+        "section": "Boundaries & Sovereignty",
+        "required": true,
+        "subsystems": [
+          "boundary"
+        ]
+      },
+      {
+        "id": "q15",
+        "text": "I protect my peak performance hours from low-value activities.",
+        "type": "scale",
+        "section": "Boundaries & Sovereignty",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "boundary",
+          "capacity"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q16",
+        "text": "My financial situation provides me with security and freedom.",
+        "type": "scale",
+        "section": "Stability & Foundation",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "stability",
+          "environment"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q17",
+        "text": "My physical health and energy levels support my ambitions.",
+        "type": "scale",
+        "section": "Stability & Foundation",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "stability",
+          "capacity"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q18",
+        "text": "My relationships are supportive and aligned with my values.",
+        "type": "scale",
+        "section": "Stability & Foundation",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "stability",
+          "environment"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q19",
+        "text": "I have clarity on my life purpose and direction.",
+        "type": "scale",
+        "section": "Stability & Foundation",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "stability",
+          "selfLeadership"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q20",
+        "text": "My core life domains are:",
+        "type": "multiple_choice",
+        "options": [
+          {
+            "label": "All thriving - solid across the board",
+            "value": "thriving",
+            "weight": 5
+          },
+          {
+            "label": "Mostly stable - 1-2 areas need work",
+            "value": "mostly_stable",
+            "weight": 4
+          },
+          {
+            "label": "Mixed - some strong, some weak",
+            "value": "mixed",
+            "weight": 3
+          },
+          {
+            "label": "Unstable - multiple areas need attention",
+            "value": "unstable",
+            "weight": 2
+          },
+          {
+            "label": "In crisis - major reconstruction needed",
+            "value": "crisis",
+            "weight": 1
+          }
+        ],
+        "section": "Stability & Foundation",
+        "required": true,
+        "subsystems": [
+          "stability"
+        ]
+      },
+      {
+        "id": "q21",
+        "text": "I have available capacity to take on new opportunities or challenges.",
+        "type": "scale",
+        "section": "Capacity & Momentum",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "capacity",
+          "momentum"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q22",
+        "text": "My current trajectory is taking me where I want to go.",
+        "type": "scale",
+        "section": "Capacity & Momentum",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "momentum",
+          "selfLeadership"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q23",
+        "text": "I feel a sense of acceleration and progress in my development.",
+        "type": "scale",
+        "section": "Capacity & Momentum",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "momentum",
+          "identityAge"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q24",
+        "text": "My primary capacity constraint is:",
+        "type": "multiple_choice",
+        "options": [
+          {
+            "label": "Time management and prioritization",
+            "value": "time",
+            "weight": 1
+          },
+          {
+            "label": "Energy and recovery systems",
+            "value": "energy",
+            "weight": 2
+          },
+          {
+            "label": "Skills and capabilities",
+            "value": "skills",
+            "weight": 3
+          },
+          {
+            "label": "Systems and infrastructure",
+            "value": "systems",
+            "weight": 4
+          },
+          {
+            "label": "Mindset and beliefs",
+            "value": "mindset",
+            "weight": 5
+          }
+        ],
+        "section": "Capacity & Momentum",
+        "required": true,
+        "subsystems": [
+          "capacity"
+        ]
+      },
+      {
+        "id": "q25",
+        "text": "I actively eliminate low-value activities to create space for growth.",
+        "type": "scale",
+        "section": "Capacity & Momentum",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "capacity",
+          "selfLeadership"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q26",
+        "text": "I can regulate my emotions effectively even in high-pressure situations.",
+        "type": "scale",
+        "section": "Emotional Patterns",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "emotionalPattern",
+          "selfLeadership"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q27",
+        "text": "I understand my emotional triggers and patterns deeply.",
+        "type": "scale",
+        "section": "Emotional Patterns",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "emotionalPattern"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q28",
+        "text": "My emotions enhance my decision-making rather than compromise it.",
+        "type": "scale",
+        "section": "Emotional Patterns",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "emotionalPattern",
+          "selfLeadership"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q29",
+        "text": "When emotionally activated, I typically:",
+        "type": "multiple_choice",
+        "options": [
+          {
+            "label": "Suppress and push through",
+            "value": "suppress",
+            "weight": 1
+          },
+          {
+            "label": "Express immediately and intensely",
+            "value": "express",
+            "weight": 2
+          },
+          {
+            "label": "Process internally then respond",
+            "value": "process",
+            "weight": 3
+          },
+          {
+            "label": "Withdraw and need space",
+            "value": "withdraw",
+            "weight": 4
+          },
+          {
+            "label": "Regulate then engage strategically",
+            "value": "regulate",
+            "weight": 5
+          }
+        ],
+        "section": "Emotional Patterns",
+        "required": true,
+        "subsystems": [
+          "emotionalPattern"
+        ]
+      },
+      {
+        "id": "q30",
+        "text": "I have effective practices for processing difficult emotions.",
+        "type": "scale",
+        "section": "Emotional Patterns",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "emotionalPattern",
+          "selfLeadership"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q31",
+        "text": "My physical environment supports my peak performance.",
+        "type": "scale",
+        "section": "Environment & Context",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "environment",
+          "capacity"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q32",
+        "text": "The people I spend the most time with elevate my thinking and performance.",
+        "type": "scale",
+        "section": "Environment & Context",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "environment"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q33",
+        "text": "My work environment aligns with my values and ambitions.",
+        "type": "scale",
+        "section": "Environment & Context",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "environment",
+          "stability"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q34",
+        "text": "I actively design my environment rather than adapt to it.",
+        "type": "scale",
+        "section": "Environment & Context",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "environment",
+          "selfLeadership"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q35",
+        "text": "The biggest environmental factor holding me back is:",
+        "type": "multiple_choice",
+        "options": [
+          {
+            "label": "Physical location or geography",
+            "value": "location",
+            "weight": 1
+          },
+          {
+            "label": "Relationships and social circle",
+            "value": "relationships",
+            "weight": 2
+          },
+          {
+            "label": "Career or professional context",
+            "value": "career",
+            "weight": 3
+          },
+          {
+            "label": "Cultural or value misalignment",
+            "value": "culture",
+            "weight": 4
+          },
+          {
+            "label": "No major environmental constraints",
+            "value": "none",
+            "weight": 5
+          }
+        ],
+        "section": "Environment & Context",
+        "required": true,
+        "subsystems": [
+          "environment"
+        ]
+      },
+      {
+        "id": "q36",
+        "text": "I have a clear personal operating system and follow it consistently.",
+        "type": "scale",
+        "section": "Self-Leadership",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "selfLeadership"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q37",
+        "text": "I track key metrics in my life and use data to make decisions.",
+        "type": "scale",
+        "section": "Self-Leadership",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "selfLeadership",
+          "capacity"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q38",
+        "text": "My sense of self has evolved significantly in the past 2-3 years.",
+        "type": "scale",
+        "section": "Identity Age",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "identityAge",
+          "momentum"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q39",
+        "text": "I feel aligned between who I am and who I'm becoming.",
+        "type": "scale",
+        "section": "Identity Age",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "identityAge",
+          "stability"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      },
+      {
+        "id": "q40",
+        "text": "All parts of my identity work together rather than conflict.",
+        "type": "scale",
+        "section": "Integration",
+        "required": true,
+        "scaleMax": 10,
+        "scaleMin": 1,
+        "subsystems": [
+          "archetype",
+          "identityAge",
+          "stability"
+        ],
+        "scaleLabels": {
+          "max": "Strongly Agree",
+          "min": "Strongly Disagree"
+        }
+      }
+    ],
+    "scoringRules": {
+      "subsystems": [
+        {
+          "id": "archetype",
+          "name": "Archetype Engine",
+          "outputs": [
+            "primary",
+            "secondary",
+            "shadow",
+            "scores"
+          ],
+          "calculation": [
+            {
+              "id": "archetype_primary",
+              "type": "threshold",
+              "inputs": [
+                "q1",
+                "q2",
+                "q3",
+                "q5"
+              ],
+              "output": "primary",
+              "thresholds": [
+                {
+                  "max": 20,
+                  "min": 0,
+                  "label": "Avoider",
+                  "value": "Avoider"
+                },
+                {
+                  "max": 30,
+                  "min": 21,
+                  "label": "Dependent",
+                  "value": "Dependent"
+                },
+                {
+                  "max": 35,
+                  "min": 31,
+                  "label": "Builder",
+                  "value": "Builder"
+                },
+                {
+                  "max": 40,
+                  "min": 36,
+                  "label": "Sovereign",
+                  "value": "Sovereign"
+                }
+              ]
+            }
+          ],
+          "description": "Determines primary, secondary, and shadow archetypes"
+        },
+        {
+          "id": "collapse",
+          "name": "Collapse Engine",
+          "outputs": [
+            "pattern",
+            "severity",
+            "triggers"
+          ],
+          "calculation": [
+            {
+              "id": "collapse_pattern",
+              "type": "mapping",
+              "inputs": [
+                "q8"
+              ],
+              "output": "pattern",
+              "mapping": {
+                "failure": "Confidence Collapse",
+                "pressure": "Performance Anxiety",
+                "isolation": "Connection Collapse",
+                "rejection": "Performance Anxiety",
+                "uncertainty": "Analysis Paralysis"
+              }
+            },
+            {
+              "id": "collapse_severity",
+              "type": "average",
+              "inputs": [
+                "q6",
+                "q7"
+              ],
+              "output": "severity"
+            }
+          ],
+          "description": "Identifies collapse patterns and triggers"
+        },
+        {
+          "id": "identityAge",
+          "name": "Identity Age Engine",
+          "outputs": [
+            "age",
+            "stage",
+            "gaps"
+          ],
+          "calculation": [
+            {
+              "id": "identity_age_calc",
+              "type": "weighted",
+              "inputs": [
+                "q3",
+                "q38",
+                "q39",
+                "q40"
+              ],
+              "output": "age",
+              "weights": {
+                "q3": 0.3,
+                "q38": 0.2,
+                "q39": 0.3,
+                "q40": 0.2
+              }
+            }
+          ],
+          "description": "Calculates identity development stage"
+        },
+        {
+          "id": "boundary",
+          "name": "Boundary Engine",
+          "outputs": [
+            "style",
+            "score",
+            "strengths",
+            "weaknesses"
+          ],
+          "calculation": [
+            {
+              "id": "boundary_score",
+              "type": "average",
+              "inputs": [
+                "q11",
+                "q12",
+                "q13",
+                "q15"
+              ],
+              "output": "score"
+            }
+          ],
+          "description": "Assesses boundary strength and style"
+        },
+        {
+          "id": "stability",
+          "name": "Stability Engine",
+          "outputs": [
+            "index",
+            "category",
+            "factors"
+          ],
+          "calculation": [
+            {
+              "id": "stability_index",
+              "type": "average",
+              "inputs": [
+                "q16",
+                "q17",
+                "q18",
+                "q19"
+              ],
+              "output": "index"
+            }
+          ],
+          "description": "Measures foundational stability across domains"
+        },
+        {
+          "id": "momentum",
+          "name": "Momentum Engine",
+          "outputs": [
+            "type",
+            "velocity",
+            "direction"
+          ],
+          "calculation": [
+            {
+              "id": "momentum_velocity",
+              "type": "average",
+              "inputs": [
+                "q21",
+                "q22",
+                "q23"
+              ],
+              "output": "velocity"
+            }
+          ],
+          "description": "Tracks developmental velocity and direction"
+        },
+        {
+          "id": "capacity",
+          "name": "Capacity Engine",
+          "outputs": [
+            "overall",
+            "constraints",
+            "expansion"
+          ],
+          "calculation": [
+            {
+              "id": "capacity_overall",
+              "type": "average",
+              "inputs": [
+                "q21",
+                "q13",
+                "q25"
+              ],
+              "output": "overall"
+            }
+          ],
+          "description": "Measures available bandwidth and constraints"
+        },
+        {
+          "id": "emotionalPattern",
+          "name": "Emotional Pattern Engine",
+          "outputs": [
+            "dominant",
+            "regulation",
+            "triggers"
+          ],
+          "calculation": [
+            {
+              "id": "emotional_regulation",
+              "type": "average",
+              "inputs": [
+                "q26",
+                "q27",
+                "q28",
+                "q30"
+              ],
+              "output": "regulation"
+            }
+          ],
+          "description": "Maps emotional regulation and patterns"
+        },
+        {
+          "id": "environment",
+          "name": "Environment Engine",
+          "outputs": [
+            "quality",
+            "factors",
+            "recommendations"
+          ],
+          "calculation": [
+            {
+              "id": "environment_quality",
+              "type": "average",
+              "inputs": [
+                "q31",
+                "q32",
+                "q33",
+                "q34"
+              ],
+              "output": "quality"
+            }
+          ],
+          "description": "Assesses environmental support and constraints"
+        },
+        {
+          "id": "selfLeadership",
+          "name": "Self-Leadership Engine",
+          "outputs": [
+            "level",
+            "competencies",
+            "development"
+          ],
+          "calculation": [
+            {
+              "id": "self_leadership_level",
+              "type": "average",
+              "inputs": [
+                "q1",
+                "q2",
+                "q5",
+                "q36",
+                "q37"
+              ],
+              "output": "level"
+            }
+          ],
+          "description": "Evaluates self-leadership competencies"
+        }
+      ],
+      "hiddenVariables": [
+        {
+          "id": "sovereignty_index",
+          "name": "Sovereignty Index",
+          "calculation": {
+            "id": "sovereignty_calc",
+            "type": "weighted",
+            "inputs": [
+              "q1",
+              "q2",
+              "q3",
+              "q11",
+              "q19"
+            ],
+            "output": "sovereignty_index",
+            "weights": {
+              "q1": 0.25,
+              "q2": 0.2,
+              "q3": 0.2,
+              "q11": 0.2,
+              "q19": 0.15
+            }
+          },
+          "description": "Composite measure of sovereign self-leadership"
+        },
+        {
+          "id": "resilience_factor",
+          "name": "Resilience Factor",
+          "calculation": {
+            "id": "resilience_calc",
+            "type": "average",
+            "inputs": [
+              "q6",
+              "q9",
+              "q26"
+            ],
+            "output": "resilience_factor"
+          },
+          "description": "Ability to maintain performance under stress"
+        },
+        {
+          "id": "growth_trajectory",
+          "name": "Growth Trajectory",
+          "calculation": {
+            "id": "growth_calc",
+            "type": "weighted",
+            "inputs": [
+              "q23",
+              "q38",
+              "q22"
+            ],
+            "output": "growth_trajectory",
+            "weights": {
+              "q22": 0.3,
+              "q23": 0.4,
+              "q38": 0.3
+            }
+          },
+          "description": "Rate and direction of identity development"
+        }
+      ],
+      "reportTemplates": [
+        {
+          "title": "Your Sovereign Identity Profile",
+          "content": "Based on your responses, you demonstrate {{sovereignty_index}} level of sovereign self-leadership...",
+          "section": "overview",
+          "variableMapping": {
+            "primary_archetype": "archetype.primary",
+            "sovereignty_index": "hiddenVariables.sovereignty_index"
+          }
+        },
+        {
+          "title": "Identity Archetype Analysis",
+          "content": "Your primary archetype is {{primary_archetype}}, which means...",
+          "section": "archetype",
+          "variableMapping": {
+            "primary_archetype": "archetype.primary"
+          }
+        }
+      ]
+    },
+    "createdAt": "2025-11-28T02:22:12.594996+00:00",
+    "updatedAt": "2025-11-28T02:22:12.594996+00:00"
+  }

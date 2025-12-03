@@ -30,7 +30,10 @@ export default function DashboardPage() {
   const inProgressInstances = userInstances.filter(i => i.status === 'in_progress');
 
   const handleStartAssessment = async () => {
-    if (definitions.length === 0) return;
+    if (definitions.length === 0) {
+      
+      return
+    };
     try {
       const instanceId = await createInstance(definitions[0].id, user.id);
       router.push(`/assessment/${definitions[0].id}?instance=${instanceId}`);

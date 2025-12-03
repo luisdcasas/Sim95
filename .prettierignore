@@ -1,0 +1,31 @@
+# Dependencies
+node_modules
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+.next
+out
+dist
+build
+
+# Cache
+.cache
+.parcel-cache
+
+# Logs
+*.log
+
+# Environment
+.env*.local
+
+# Generated files
+next-env.d.ts
+*.tsbuildinfo
+
+# Test results
+coverage
+test-results
+playwright-report
+

@@ -1,0 +1,9 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Discussion
+    url: https://github.com/YOUR_USERNAME/sim95/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: 📚 Documentation
+    url: https://github.com/YOUR_USERNAME/sim95#readme
+    about: Check our documentation and README
+

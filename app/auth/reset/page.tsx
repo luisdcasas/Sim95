@@ -16,63 +16,52 @@ function ResetPasswordContent() {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const searchParams = useSearchParams();
   const router = useRouter();
-  const token = searchParams?.get("access_token") ?? null;
-  const type = searchParams?.get("type") ?? null;
+  const token = searchParams?.get("token");
+  const type = searchParams?.get("type");
 
   useEffect(() => {
-    const code = searchParams?.get("code") ?? null;;
-    const type = searchParams?.get("type") ?? null;;
-
-    if (!code || type !== "recovery") {
+    if (!token || type !== "recovery") {
       setError("Invalid reset link. Please request a new one.");
       return;
     }
 
-    const applyRecoveryCode = async () => {
-      const { error } = await supabase.auth.exchangeCodeForSession(code);
-
-      if (error) {
-        setError("Recovery link expired or invalid.");
-        return;
-      }
+    const process = async () => {
+      const { error } = await supabase.auth.exchangeCodeForSession(token);
+      if (error) setError("Recovery link expired or invalid.");
     };
 
-    applyRecoveryCode();
-  }, [searchParams]);
+    process();
+  }, [token, type]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setError('');
+    setError("");
 
-    // Validation
     if (newPassword.length < 8) {
-      setError('Password must be at least 8 characters long');
+      setError("Password must be at least 8 characters long");
       return;
     }
 
     if (newPassword !== confirmPassword) {
-      setError('Passwords do not match');
-      return;
-    }
-
-    if (!token) {
-      setError('Invalid reset token');
+      setError("Passwords do not match");
       return;
     }
 
     setLoading(true);
 
-    try {
-      const { error } = await supabase.auth.updateUser({
-        password: newPassword
-      });
+    const { error } = await supabase.auth.updateUser({
+      password: newPassword,
+    });
+
+    setLoading(false);
+
+    if (error) {
+      setError(error.message);
+    } else {
       setIsSubmitted(true);
-    } catch (err: any) {
-      setError(err.message || 'Failed to reset password. Please try again.');
-    } finally {
-      setLoading(false);
     }
   };
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4">
